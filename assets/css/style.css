@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100, 200, 300, 400, 500, 600, 700|Exo:100, 200, 300, 400, 500, 600, 700');
+
+/*---------------------------colors*/
+
+
+.bg-color-contact{
+    background-color: white;
+}
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #525252;
+    color: #555555;
+}
+
+/*-----special padding/margins etc*/
+
+.inline-block{
+    display: inline-block;
+}
+
+.uppercase{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 300;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+@media(min-width: 769px) {
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+
+.no-padding-left{
+    padding-left: 0px;
+}
+
+/*---------------------------heading*/
+
+header{
+    margin: 0;
+}
+
+.heading{
+    margin-left: 50px;
+}
+
+.logo{
+    background: url(/assets/images/Monkees_red.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 150px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+/*---------------------------nav*/
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    border: 1;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: black;
+}
+
+.navbar .navbar-brand:hover {
+    color: black;
+}
+
+.navbar-default .navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: black;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: black;
+}
+
+.navbar-btn {
+    border: 0;
+    border-radius: 16px;
+    width: 100px;
+    background-color: #848281;
+    color: black;
+}
+
+.navbar-btn:hover {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
+}
+/*---------------------------hoover background change*/
+ 
+.hvr-sweep-to-bottom:before{
+    background: none;
+    }   
+
+
+@media(min-width: 769px) {
+    .hvr-sweep-to-bottom:before{
+    background: rgba(200, 0, 0, 0.1);
+    height: 51px;
+    }   
+
+}
+
+
+
+/*---------------------------footer*/
+footer{
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+footer .cv-pdf i{
+    color: #fafafa;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+footer .cv-pdf i:hover{
+    color: #e84610;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+#footer-details{
+    margin: 20px; 
+}
+
+/*---------------------------social media icons*/
+.social-links{
+    padding-top: 9px;
+    text-align: center;
+}
+
+.social-links li a i{
+    width: 32px;
+    height: 32px;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+     -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover{
+    background: rgba(200, 0, 0, 0.65);
+}
+
+/*---------------------------home: section*/
+
+.callout-container {
+    height: 60vh;
+    
+    background: url('/assets/images/cover3.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*---------------------------section: table*/
+
+.container {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.table{
+    padding-top: 10px;
+    margin-bottom: 5px;
+    border: 0px;
+}
+
+/*---------------------------section: news*/
+
+.head{
+    vertical-align: middle;
+    background-color: transparent;
+    color: white;
+}
+
+.info{
+    background-color: white;
+    color: black;
+}
+
+.page-header{
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    
+}
+
+.news{
+    padding-left: 0px;
+    width: 91%;
+}
+
+/*---------------------------section: video*/
+
+
+.video{
+    width: 100vw;
+}
+
+
+@media(min-width: 769px) {
+    .video {
+        max-width: 560px;
+        min-width: 320px;
+        height: auto;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*---------------------------section: music*/
+
+.music{
+    background-color: white;
+    color: black;
+    padding-top: 65px;
+}
+
+@media(min-width: 930px) {
+    .widescreen{
+        width: 300px;
+    }
+}
+
+.album-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width: 768px) {
+    .album-image {
+        margin: auto;
+        display: block;
+    }    
+}
+
+
+@media(max-width: 768px) {
+    .centered-table{
+    margin: auto;
+    display: block;
+    text-align: center;
+    }
+    .centered-table > table > thead > tr > th {
+       text-align: center; 
+    } 
+}
+
+
+
+.gap{
+    margin-top: 20px;
+}
+
+/*---------------------------section: store*/
+
+.navbar-default .navbar-nav>li.shade>a{
+    color: #f32121;
+}
+
+.store{
+    background-color: white;
+    color: black;
+    padding-top: 65px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.btn:hover{
+    background-color: #f32121;
+    color: white;
+    border-color: black;
+}
+
+.btn:focus,
+.btn:active {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+.disc1{
+    background: url(/assets/images/album.jpg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.disc2{
+    background: url(/assets/images/album2.jpg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tee{
+    background: url(/assets/images/monkeestshirt.jpg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+
+.mug{
+    background: url(/assets/images/monkees2014_throwback_mug_1.jpg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+
+@media(min-width: 769px) {
+    .disc1{
+        background: url(/assets/images/album.jpg);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .disc2{
+        background: url(/assets/images/album2.jpg);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .tee{
+        background: url(/assets/images/monkeestshirt.jpg);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        padding-left: 10px;
+        padding-right: 10px;    
+    }
+    
+    .mug{
+        background: url(/assets/images/monkees2014_throwback_mug_1.jpg);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20vw;
+        padding-left: 10px;
+        padding-right: 10px;    
+    }
+}
+
+/*---------------------------section: contact*/
+
+
+.contact-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form{
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"]{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #f32121;
+    color: #fafafa;
+}
